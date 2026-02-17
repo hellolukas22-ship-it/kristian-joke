@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kristian's Joke 🔥</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      color: #a0a0a0;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    .joke-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .joke-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #feca57;
+    }
+
+    .joke-card p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #e0e0e0;
+    }
+
+    .audio-player {
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .mic-icon {
+      font-size: 4rem;
+      margin-bottom: 15px;
+    }
+
+    audio {
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .credits {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .credits span {
+      color: #ff6b6b;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 50px;
+      color: #444;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .joke-card { padding: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 Kristian's Joke</h1>
+    <p class="subtitle">Warning: May cause uncontrolled laughter</p>
+
+    <div class="joke-card">
+      <h2>The Setup</h2>
+      <p>Audio loading... �</p>
+    </div>
+
+    <div class="audio-player">
+      <div class="mic-icon">🎙️</div>
+      <audio controls>
+        <source src="joke.mp3" type="audio/mpeg">
+        Your browser doesn't support audio.
+      </audio>
+    </div>
+
+    <p class="credits">Told by <span>Kristian</span> 🎤</p>
+    
+    <p class="footer">Built by Paka for Ómar</p>
+  </div>
+</body>
+</html>
